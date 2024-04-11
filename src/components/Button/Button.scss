@@ -1,0 +1,16 @@
+@import "../../style/utils/variables";
+@import "../../style/utils/placeholders";
+
+.Button {
+  @extend %buttons;
+  width: max-content;
+  padding: 10px 15px;
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: $secondary-color;
+  transition: all $default-transition ease-in-out;
+
+  &:hover {
+    background-color: $secondary-color-hover;
+  }
+}

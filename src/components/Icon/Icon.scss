@@ -1,0 +1,53 @@
+@import "../../style/utils/variables";
+
+.Icon {
+  transition: all $default-transition ease-in-out;
+  cursor: pointer;
+
+  &__refresh {
+    width: 25px;
+    height: 25px;
+
+    &--active {
+      animation: rotateFullTurn 0.3s forwards;
+    }
+  }
+
+  &__copy {
+    width: 25px;
+    height: 25px;
+
+    &:hover {
+      transform: scale(0.9);
+    }
+  }
+
+  &__plus,
+  &__minus {
+    width: 40px;
+    height: 40px;
+    // filter: invert(20%) sepia(243%) saturate(1576%) hue-rotate(-21deg) brightness(137%) contrast(73%);
+    // filter: white;
+
+    // stroke: white;
+
+    // background-color: white;
+    // color: white;
+    // fill-opacity: 50%;
+
+    // filter: invert;
+  }
+}
+
+@keyframes rotateFullTurn {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+// &:hover {
+//   transform: rotate(0.5turn);
+// }

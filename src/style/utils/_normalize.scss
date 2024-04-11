@@ -1,0 +1,26 @@
+@import "./variables";
+@import "./placeholders";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color: $main-text-color;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+
+  background-color: $main-bg-color;
+}
+
+#root {
+  @extend %body-text;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
